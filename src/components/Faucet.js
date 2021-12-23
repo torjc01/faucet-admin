@@ -5,9 +5,7 @@ import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import Message from './Message.js'
 
-// const tokenAddress = "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512" // localhost
-const tokenAddress = "0x6550cE7d47c61F9b0cBF23a607C1De34c1651392" // goerli
-// const tokenAddress = process.env.REACT_APP_CONTRATO_GORLI;
+const tokenAddress = process.env.REACT_APP_CONTRATO_GORLI;
 
 const Faucet = (props) => {
 
@@ -39,7 +37,7 @@ const Faucet = (props) => {
   }
     return (
         <div>
-        <Card style={{background: "rgba(227, 104, 222, 0.71)"}}>
+        <Card style={{background: "white"}}>
         <Card.Body>
         <Card.Subtitle>recieve faucet ERC20 to your wallet
         </Card.Subtitle><br></br>

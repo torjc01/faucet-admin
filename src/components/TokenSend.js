@@ -4,9 +4,7 @@ import { ethers } from 'ethers'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 
-// const tokenAddress = "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512" // localhost
-const tokenAddress = "0x6550cE7d47c61F9b0cBF23a607C1De34c1651392" // goerli
-//const tokenAddress = process.env.REACT_APP_CONTRATO_GORLI;
+const tokenAddress = process.env.REACT_APP_CONTRATO_GORLI;
 
 const TokenSend = (props) => {
 
@@ -30,17 +28,17 @@ const TokenSend = (props) => {
   }
 }
     return (
-        <Card style={{background: "rgba(227, 104, 222, 0.71)"}}>
-        <Card.Body>
-        <Card.Subtitle> send faucet to an address
-        </Card.Subtitle>
-        <br></br>
-        <div className="d-grid gap-2">
-        <input onChange={e => setUserAccount(e.target.value)} placeholder="Payee 0x address" />
-        <input onChange={e => setAmount(e.target.value)} placeholder="Amount" />
-        <Button onClick={sendCoins} variant="success">send </Button>
-        </div>
-        </Card.Body>
+        <Card style={{background: "white"}}>
+          <Card.Body>
+            <Card.Subtitle> send faucet to an address
+            </Card.Subtitle>
+            <br></br>
+            <div className="d-grid gap-2">
+              <input onChange={e => setUserAccount(e.target.value)} placeholder="Payee 0x address" />
+              <input onChange={e => setAmount(e.target.value)} placeholder="Amount" />
+              <Button onClick={sendCoins} variant="success">send </Button>
+            </div>
+          </Card.Body>
         </Card>
     )
 }
