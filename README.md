@@ -14,8 +14,6 @@ node scripts/sample-script.js
 npx hardhat help
 ```
 
-Faucet for goerli 
-https://faucet.goerli.mudit.blog/
 
 
 # Repository creation in git
@@ -37,3 +35,11 @@ git remote add origin https://github.com/torjc01/faucet-admin.git
 git branch -M main
 git push -u origin main
 ```
+# Reference 
+
+Faucet for goerli 
+https://faucet.goerli.mudit.blog/
+
+
+Deploy to web - for free
+https://app.netlify.com/
