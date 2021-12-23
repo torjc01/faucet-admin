@@ -14,6 +14,20 @@ node scripts/sample-script.js
 npx hardhat help
 ```
 
+# Processo de compilação
+
+```
+npx create-react-app react-token-faucet
+
+npx hardhat run
+
+npx hardhat node 
+
+npx hardhat run scripts/deploy.js --network localhost
+
+
+```
+
 
 
 # Repository creation in git
@@ -37,9 +51,20 @@ git push -u origin main
 ```
 # Reference 
 
+https://dev.to/richardmelko/ethereum-dapp-crash-course-make-an-erc20-token-faucet-frontend-2m43
+
+
+https://remix.ethereum.org/
+
+
 Faucet for goerli 
 https://faucet.goerli.mudit.blog/
 
 
 Deploy to web - for free
 https://app.netlify.com/
+
+
+Site deployed
+https://elated-aryabhata-d0c610.netlify.app/
+
